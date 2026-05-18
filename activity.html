@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>活動報告｜ふらっともるっく</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    /* ===== 左：日付ナビ ===== */
+    .sidebar {
+      width: 220px;
+      background: #ffffff;
+      padding: 25px 20px;
+      border-right: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .sidebar h2 {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #2c7a7b;
+    }
+
+    .date-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .date-list li {
+      margin-bottom: 10px;
+    }
+
+    .date-list a {
+      color: #2c7a7b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .date-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== 右：活動報告 ===== */
+    .content {
+      flex: 1;
+      padding: 40px 30px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #2c7a7b;
+    }
+
+    .report {
+      margin-bottom: 60px;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    .report h3 {
+      margin-top: 0;
+      border-left: 5px solid #2c7a7b;
+      padding-left: 10px;
+    }
+
+    .report-date {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .report p {
+      line-height: 1.8;
+    }
+
+    /* ===== フッター ===== */
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: #2c7a7b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* ===== スマホ対応 ===== */
+    @media (max-width: 900px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+      }
+    }
+   /* ===== フッター ===== */
+    footer {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #2c7a7b;
+    }
+.insta-btn {
+  padding: 8px 16px;
+  border: 2px solid #E1306C;
+  border-radius: 20px;
+  color: #E1306C;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.insta-btn:hover {
+  background: #E1306C;
+  color: #fff;
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- 左：日付ナビ -->
+  <nav class="sidebar">
+  <h2>活動日</h2>
+  <ul class="date-list">
+   
+    <li><a href="#report-20260501">2026.05.01</a></li>
+    <li><a href="#report-20260325">2026.03.25</a></li>
+  </ul>
+</nav>
+
+  <!-- 右：活動内容 -->
+  <main class="content">
+
+    <h1>活動報告</h1>
+
+   
+
+    <!-- 活動② -->
+    <section id="report-20260501" class="report">
+      <div class="report-date">2026年5月1日</div>
+      <h3>試行テスト</h3>
+      <p>
+        ILTISの幹部のみで実際にモルックをプレイしてみました。未経験者の人も多くうまくいくか不安でしたが楽しみながら行うことができました。はじめは悪天に見舞われプレイ自体できるか怪しかったですが太陽に恵まれ快晴のなかのモルックを楽しむこともできました。ぜひ皆さんとモルックをするのを楽しみにしています。
+      </p>
+    </section>
+
+    <!-- 活動③ -->
+    <section id="report-20260325" class="report">
+      <div class="report-date">2026年3月25日</div>
+      <h3>立ち上げミーティング</h3>
+      <p>
+        サークル設立に向けた打ち合わせを行いました。
+        活動方針や雰囲気について話し合い、「ゆるく続ける」を大切にすることを決めました。
+      </p>
+    </section>
+
+    <!-- フッター -->
+  <footer>
+    <a href="index.html">ホーム</a>｜
+    <a href="activity.html">活動報告</a>｜
+    <a href="https://forms.gle/azZCckd4B6eGhaPK9">団体参加</a>
+<a href="https://www.instagram.com/flat_molkky/"
+   target="_blank" 
+   class="insta-btn">
+  Instagram
+</a>
+
+  </footer>
+
+
+  </main>
+
+</div>
+
+</body>
+</html>

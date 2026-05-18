@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ふらっともるっく｜インカレモルックサークル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== ヘッダー ===== */
+    header {
+      background: #ffffff;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2c7a7b;
+    }
+
+    .join-btn {
+      padding: 10px 22px;
+      background: #2c7a7b;
+      color: #fff;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .join-btn:hover {
+      background: #256d6d;
+    }
+
+    /* ===== メイン ===== */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* 一言紹介 */
+    .catch {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* ナビゲーションボタン */
+    .nav-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-bottom: 60px;
+    }
+
+    .nav-buttons a {
+      background: #ffffff;
+      padding: 18px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .nav-buttons a:hover {
+      background: #eef7f6;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      border-left: 5px solid #2c7a7b;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    section p, section ul {
+      line-height: 1.8;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ===== フッター ===== */
+    footer {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #2c7a7b;
+    }
+.insta-btn {
+  padding: 8px 16px;
+  border: 2px solid #E1306C;
+  border-radius: 20px;
+  color: #E1306C;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.insta-btn:hover {
+  background: #E1306C;
+  color: #fff;
+}
+.latest-activity {
+  margin-bottom: 60px;
+}
+
+.latest-activity h2 {
+  border-left: 5px solid #2c7a7b;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.activity-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.activity-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.activity-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.activity-link {
+  font-weight: bold;
+  color: #2c7a7b;
+  text-decoration: none;
+}
+
+.activity-link:hover {
+  text-decoration: underline;
+}
+.section-gray {
+  background: #f1f7f7;
+  padding: 50px 30px;
+  border-radius: 20px;
+}
+.hero {
+  position: relative;
+  background-image: url("S__72253444.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero h1,
+.hero p,
+.hero a {
+  position: relative;
+  z-index: 1;
+}
+.hero a {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ffffff;
+  color: #2c7a7b;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">ILTIS(モルックサークル)</div>
+  <a href="https://www.instagram.com/iltis_molkky/"
+   target="_blank" 
+   class="insta-btn">
+  Instagram
+</a>
+
+  </header>
+<section class="hero">
+  <h1>ふらっと、投げよう。</h1>
+  <p>
+    大学生がふらっと集まって、<br>
+    ゆるく楽しくモルックを楽しむインカレサークル
+  </p>
+  <a href="https://forms.gle/azZCckd4B6eGhaPK9">体験参加してみる</a>
+</section>
+
+  <main>
+
+    <!-- 一言紹介 -->
+    <div class="catch">
+      大学生がふらっと集まって、ゆるく楽しくモルックをするインカレサークル
+    </div>
+
+    <!-- ナビゲーション -->
+    <div class="nav-buttons">
+      <a href="activity.html">活動報告</a>
+      <a href="picture.html">ギャラリー</a>
+      <a href="question.html">よくある質問</a>
+      <a href="people.html">参加者の声</a>
+      <a href="way.html">参加方法</a>
+    </div>
+
+    <!-- 団体説明 -->
+    <section>
+<section class="container fade-in">
+<section class="latest-activity">
+  <h2>最新活動</h2>
+
+  <div class="activity-card">
+    <div class="activity-date">2026年5月1日</div>
+    <h3>春の定例活動（公園モルック）</h3>
+    <p>
+      ILTISの幹部のみで実際にモルックをプレイしてみました。未経験者の人も多くうまくいくか不安でしたが楽しみながら行うことができました。はじめは悪天に見舞われプレイ自体できるか怪しかったですが太陽に恵まれ快晴のなかのモルックを楽しむこともできました。ぜひ皆さんとモルックをするのを楽しみにしています。
+
+    </p>
+
+    <a href="activity.html#report-20260501">
+      活動報告を読む →
+    </a>
+  </div>
+</section>
+</section>
+<section class="section-gray">
+      <h2>ILTISとは</h2>
+      <p>
+        ILTISは、大学生が主体となって活動する
+        インカレモルックサークルです。<br>
+        初心者・未経験者大歓迎で、気軽に参加できる雰囲気を大切にしています。<br>
+        暇な時間に何かやりたい人、学外に友達を作りたい人、軽く運動したい人大歓迎です！
+      </p>
+    </section>
+<section class="section-gray">
+      <h2>参加にあたっての注意事項</h2>
+      <p>
+当サークルでは、参加者全員が安心して楽しく活動できる環境づくりを大切にしています。
+そのため、以下の点をご理解・ご協力いただける方の参加をお願いしています。
+<li>サークルの目的（モルックを楽しむこと・交流）を理解し、協調性を持って行動できる方
+<li>他の参加者に対して、迷惑行為・威圧的な言動・過度な勧誘行為等を行わない方
+<li>主催者や運営メンバーの指示・ルールを守れる方
+<li>営利目的・宗教・政治活動など、サークル活動と無関係な目的での参加はご遠慮ください
+      </p>
+    </section>
+
+
+    <!-- 活動実績 -->
+    <section>
+<section class="section-gray">
+
+      <h2>活動実績(予定)</h2>
+      <ul>
+        <li>公園での定期活動</li>
+        <li>インカレ交流会の開催</li>
+        <li>大会出場</li>
+      </ul>
+    </section>
+<section class="section-gray">
+      <h2>モルックとは</h2>
+      <p>
+        モルックとは、フィンランド発祥のアウトドアスポーツです。
+木製の棒「モルック」を投げて、数字が書かれた木製ピン（スキットル）を倒し、得点を競います。倒した本数や数字によって得点が決まり、ちょうど50点を目指すのが特徴です。
+ルールはシンプルですが、狙いや戦略が重要で、初心者から経験者まで一緒に楽しめます。年齢や体力に関係なく参加できるため、交流やチームワークを深めるスポーツとしても人気があります。
+私たちのサークルでは、未経験者・初心者も大歓迎です。
+体を動かしながら、楽しくモルックを楽しみましょう！
+      </p>
+    </section>
+
+
+
+    <!-- 自己紹介 -->
+    <section>
+<section class="section-gray">
+
+      <h2>代表・運営者紹介</h2>
+      <p>
+        大学生2年生。モルックを通して、大学の枠を超えた
+        ゆるいつながりを作りたいと思い「ILTIS」を立ち上げました。<br>
+        初めての人でも安心して参加できる場づくりを心がけています。
+      </p>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <a href="index.html">ホーム</a>｜
+    <a href="activity.html">活動報告</a>｜
+    <a href="https://forms.gle/azZCckd4B6eGhaPK9">団体参加</a>
+
+  </footer>
+<script>
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const onScroll = () => {
+    fadeElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // 初回表示用
+</script>
+</body>
+</html>

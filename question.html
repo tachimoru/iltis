@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>よくある質問｜ふらっともるっく</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+ h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c7a7b;
+}
+
+
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+.faq-question {
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  color: #2c7a7b;
+}
+
+
+.faq-question::after {
+  content: "＋";
+  position: absolute;
+  right: 20px;
+  color: #2c7a7b;
+  transition: transform 0.3s;
+}
+.faq-item.active {
+  border-left: 5px solid #2c7a7b;
+}
+.faq-answer {
+  display: none;
+  padding: 0 20px 16px 20px;
+  line-height: 1.6;
+  background: #f1f9f8; /* 薄いサークルカラー */
+}
+
+
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  /* ===== フッター ===== */
+    footer {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #2c7a7b;
+    }
+.insta-btn {
+  padding: 8px 16px;
+  border: 2px solid #E1306C;
+  border-radius: 20px;
+  color: #E1306C;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.insta-btn:hover {
+  background: #E1306C;
+  color: #fff;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>よくある質問</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. モルック未経験でも参加できますか？</div>
+      <div class="faq-answer">
+        はい、もちろん参加できます！  
+        参加者のほとんどが初心者からのスタートです。ルール説明から行うので安心してください。実のところ代表もモルック初心者です笑
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. どこの大学の学生でも参加できますか？</div>
+      <div class="faq-answer">
+        はい、大学・学部・学年は問いません。  
+        ILTISは大学生・大学院生対象のインカレサークルです。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. 参加費はかかりますか？</div>
+      <div class="faq-answer">
+        年会費を1000円いただく予定です。ただし、体験期間として初参加から三回までは無料で参加することができます。またイベントや大会参加時、必要に応じて実費をお願いする場合があります。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. どこで活動していますか？</div>
+      <div class="faq-answer">
+        主に昭和記念公園(立川市)などの屋外で活動しています。  
+        活動場所や日程はInstagramやホームページ、オープンチャットなどでお知らせしています。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. 毎回参加しないといけませんか？</div>
+      <div class="faq-answer">
+        いいえ、参加は自由です。  
+        来られるときにふらっと参加してもらえれば大丈夫です。毎回参加してもらっても、年に数回などでも大歓迎です！まずは一回体験に訪れてみてください！
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q. 参加方法を教えてください</div>
+      <div class="faq-answer">
+        ホームページ、Instagramに記載されているフォームから参加の予約をお願いいたします。 
+        体験参加も大歓迎です！
+      </div>
+    </div>
+
+    <!-- フッター -->
+  <footer>
+    <a href="index.html">ホーム</a>｜
+    <a href="activity.html">活動報告</a>｜
+    <a href="https://forms.gle/azZCckd4B6eGhaPK9">団体参加</a>
+
+
+  </footer>
+
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
